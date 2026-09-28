@@ -1,2 +1,40 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Sign in · Herdwell</title><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/auth.css"></head><body><main class="auth-page"><section class="auth-card"><a class="brand" href="index.html"><span class="brand-mark">+</span> Herdwell</a><h1>Welcome back</h1><p>Sign in to continue managing your herd, practice, dairy, or store.</p><form class="auth-form" data-auth-form data-redirect="role-selection.html"><label>Email address<input type="email" required placeholder="you@example.com"></label><label>Password<input type="password" required placeholder="Your password"></label><button class="button" type="submit">Sign in</button></form><p class="auth-note">New to Herdwell? <a href="register.html">Create an account</a></p></section></main><script src="assets/js/auth.js"></script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Sign in/Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-card"><a class="brand" style="color: black; font-size: medium;" href="index.html"><span class="brand-mark">🐄</span>Cattle HealthCare Management System</a>
+            <h1>Welcome back</h1>
+            <p>Sign in to continue managing your herd, practice, dairy, or store.</p>
+            <form class="auth-form" data-auth-form data-redirect="role-selection.html">
+                <label>Email address<input type="email" required placeholder="you@example.com"></label>
+                <label>Select Role : </label>
+                <select required>
+                    <option value="">Select your role</option>
+                    <option value="farmer">Farmer</option>
+                    <option value="veterinarian">Veterinarian</option>
+                    <option value="medical-store">Medical store</option>
+                    <option value="dairy-manager">Dairy manager</option>
+                    <optgroup label="Admin Roles">
+                        <option value="admin">Admin</option>
+                        <option value="super-admin">Super Admin</option>
+                    </optgroup>
+                </select>
+                <label>Password<input type="password" required placeholder="Your password"></label>
+                <button class="button" type="submit">Sign in</button>
+            </form>
+            <p class="auth-note">New to Herdwell? <a href="register.html">Create an account</a></p>
+        </section>
+    </main>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
