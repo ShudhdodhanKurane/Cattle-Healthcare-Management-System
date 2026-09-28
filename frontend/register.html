@@ -1,2 +1,40 @@
 <!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Create account · Herdwell</title><link rel="stylesheet" href="assets/css/style.css"><link rel="stylesheet" href="assets/css/auth.css"></head><body><main class="auth-page"><section class="auth-card"><a class="brand" href="index.html"><span class="brand-mark">+</span> Herdwell</a><h1>Create account</h1><p>Start with the role that best describes your work.</p><form class="auth-form" data-auth-form data-redirect="role-selection.html"><label>Full name<input type="text" required placeholder="Your name"></label><label>Email address<input type="email" required placeholder="you@example.com"></label><label>Password<input type="password" required placeholder="At least 8 characters"></label><button class="button" type="submit">Continue</button></form><p class="auth-note">Already registered? <a href="login.html">Sign in</a></p></section></main><script src="assets/js/auth.js"></script></body></html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Register Page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/auth.css">
+</head>
+
+<body>
+    <main class="auth-page">
+        <section class="auth-card"><a class="brand" style="color: black; font-size: medium;" href="index.html"><span class="brand-mark">🐄</span>Cattle HealtCare Management System</a>
+            <h1>Create account</h1>
+            <p>Start with the role that best describes your work.</p>
+            <form class="auth-form" action="register.html" method="post">
+                    <label>Full name<input type="text" required placeholder="Your name"></label>
+                    <label>Email address<input type="email" required placeholder="you@example.com"></label>
+                    <label>Phone number<input type="tel" required placeholder="Your phone number"></label>
+                    <label> Select Role
+                        <select required>
+                            <option value="">Select your role</option>
+                            <option value="farmer">Farmer</option>
+                            <option value="veterinarian">Veterinarian</option>
+                            <option value="medical-store">Medical store</option>
+                            <option value="dairy-manager">Dairy manager</option>
+                        </select>
+                    </label>
+                    <label>Password<input type="password" required placeholder="At least 8 characters"></label>
+                    <label>Confirm password<input type="password" required placeholder="Repeat your password"></label>
+                    <button class="button" type="submit">Continue</button>
+            </form>
+            <p class="auth-note">Already registered? <a href="login.html">Sign in</a></p>
+        </section>
+    </main>
+    <script src="assets/js/auth.js"></script>
+</body>
+
+</html>
